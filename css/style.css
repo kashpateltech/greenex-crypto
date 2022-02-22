@@ -1,0 +1,1101 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Play', sans-serif;
+    text-justify: distribute;
+}
+
+body{
+    background-color: rgb(15, 14, 14);
+    color: whitesmoke;
+    position:absolute;
+    z-index: 900;
+}
+
+h1{
+    color: white;
+}
+
+
+i{
+    color:white!important;
+    margin:6px;
+}
+
+
+.text-green{
+    color:lime !important;
+}
+
+
+#particles-js{
+    width: 100%;
+    height: 90vh;
+    position: fixed;
+    left: 0;
+    top: 10;
+    bottom:200px!important;
+    z-index:0!important;
+}
+
+
+/***************************nav bar *******************************/
+
+.navbar{
+    background-color:rgb(29, 26, 29)!important;
+}
+
+.nav-link{
+    padding-right: 1rem !important;   
+    padding-left: 1rem !important;   
+    transition: 300ms;
+    transition: all 0.3s ease-in;
+    text-align: cente;
+}
+
+.nav-link:hover{
+    text-decoration-color:rgb(244, 245, 242);
+    color: rgb(255, 255, 255)!important;
+    outline-color: white;
+    outline-style: solid;
+}
+
+.nav-item > a{
+    font-weight:300
+}
+
+img{
+    width: 4%;
+    min-width: 50px;
+}
+
+/*********************************** Hero header **********************************/
+.hero-container{
+    margin:3rem auto;
+    z-index:50;
+    position:relative;
+}
+
+.bg-green{
+    background-color:rgb(52, 146, 52);
+}
+
+
+.hero-header{
+    position: relative;
+    min-height: 300px;
+    z-index:16;
+} 
+
+.hero-header h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.hero-text p{
+    font-size:1.3rem;
+}
+
+#token-address{
+    text-align: left;
+    font-size: 1.2rem;
+    color: greenyellow;
+}
+
+.hero-container a {
+    text-decoration: none;
+    color:white;
+    background-color:green;
+    padding:0.6rem 1.3rem;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.hero-container a:hover{
+    background-color: white;
+    color: green;
+}
+
+/************************************ Back to top ************************************/
+
+.back-home{
+    width: 100%;
+    position: fixed;
+    font-size: 1.2rem;
+    bottom:50%;
+    background-color:rgb(41, 44, 41);
+    width:45px;
+    min-width:30px;
+    left:96%;
+    justify-content: center;
+    text-align:center;
+    padding:10px 1px;
+    z-index: 500;
+}
+
+.back-bottom{
+    width: 100%;
+    position: fixed;
+    font-size: 1.2rem;
+    top:50%;
+    background-color:rgb(41, 44, 41);
+    width:45px;
+    min-width:30px;
+    left:96%;
+    justify-content: center;
+    text-align:center;
+    padding:10px 1px;
+    z-index: 500;
+}
+
+.back-home:hover , .back-bottom:hover{
+    color:lime!important;
+}
+
+
+/************************************* Roadmap*************************************/
+.timeline{
+    width:100%;
+    height: auto;
+    max-width: 1000px;
+    margin:2rem auto;
+    position: relative;
+    padding: 2rem;
+}
+
+
+.roadmap-title{
+    margin:2rem auto;
+    outline-style: solid;
+    padding:0.8rem 3rem;
+    outline-width: 1px;
+    /* outline-color: lime; */
+}
+
+.timeline-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color:rgb(0, 0, 0)!important; */
+    background-image: url(../img/bg/bg11.jpg);
+    background-size: cover;
+    padding:0.3rem;
+    
+}
+
+.timeline ul{
+    list-style: none;
+    padding: 0 !important;
+}
+
+.timeline ul li{
+    padding: 20px;
+    background-color:rgb(34, 33, 33);
+    margin-bottom: 20px;
+    height: 11rem;
+    border-radius: 10px;
+}
+
+
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-content h3{
+    font-size:1.2rem;
+    font-weight:400;
+    line-height: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.timeline-content p{
+    font-size : 16px;
+    line-height:30px;
+    font-weight:300;
+}
+
+.timeline-container .date{
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+/************************************* Greenpaper *************************************/
+.greenpaper-container{
+    width: 100%;
+    min-height: 50rem;
+    /* background-image: url(/img/bg30.jpg); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(../img/bg/bg36.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:10;
+    /* position:relative; */
+}
+
+
+.greenpaper-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin:2rem;
+    height: 80%;
+    padding: 0.8rem 1.5rem;
+    line-height:40px ; 
+    outline-width: 1px;
+    outline-color:black;
+    outline-style: solid;
+    background-color: rgb(37, 37, 37);
+    z-index:5!important;
+    position:relative;
+
+}
+
+.greenpaper-container div h1{
+    border:3px;
+    outline-style: solid;
+    padding:0.8rem 2.5rem;
+    outline-color:white;
+    outline-width: 1px;
+    color: lime;
+    font-size:2.5rem;
+}
+
+#greenpaper-content{
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 2rem;
+    color:white;
+    margin-bottom: 2rem!important;
+    text-align:left;    
+}
+
+.greenpaper-container button a{
+    text-decoration: none;
+    /* color:white; */
+    font-weight: bolder;
+    padding:0.6rem;
+    color:green;
+    z-index:890;
+}
+
+/* Marketplace*/
+.marketplace{
+    width:100%;
+    min-height: 500px;
+    background-image: url(../img/bg/nft.jpg);
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    /* justify-self: center;
+    justify-items: center; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    margin: 5rem 0;
+
+}
+
+.marketplace div{
+    width: 70%;
+    max-height: 500px;
+    min-width: 320px;
+    background-color: rgb(15, 15, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 4rem;
+}
+
+.marketplace div h3{
+    padding: 1rem;
+    color: greenyellow;
+}
+
+
+.marketplace div button{
+    max-width: 150px;
+    font-size: 0.8rem !important;
+    margin-top:15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color:rgb(58, 155, 20);
+    font-weight: 600;
+    padding:0.5rem 1rem;
+}
+
+
+
+
+/************************************* Team *************************************/
+.team .card-img-top{
+    border-radius: 50%!important;
+    width: 50%;
+    margin-top: -1.5rem;
+    box-shadow: 7px 3px 7px rgba(55, 92, 52, 0.7);
+}
+
+.col{
+    margin-top: 4rem;
+}
+
+.team .card{
+    background-color: rgb(49, 54, 49)!important;
+    /* background-image: linear-gradient(to bottom, rgba(143, 194, 155, 0.945),rgba(92, 212, 88, 0.164))!important; */
+
+    color:white;
+    /* z-index:10; */
+
+   
+}
+
+.card-title{
+    font-size: 1.1rem;
+}
+
+.card-text{
+    font-size: 0.8rem;
+}
+
+.team-title{
+    width:100%;
+    align-content: center;
+    text-align: center;
+}
+
+.team-title h1,.buy-header div h1{
+    font-size: 2.5rem !important;
+    outline-width: 1px;
+    outline-color: white;
+    outline-style: solid;
+    width:70%;
+    max-width:350px;
+    padding:0.8rem 1.5rem !important;
+    position: ralative;
+    transform: translateX(-50%);
+    margin-left:50%;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Partner */
+.inner-wrapper{
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../img/bg/bg1.jfif);
+    padding: 2rem;
+}
+
+.inner-wrapper h1{
+    font-size: 2.5rem !important;
+    outline-width: 1px;
+    outline-color: white;
+    outline-style: solid;
+    width:70%;
+    max-width:350px;
+    padding:0.8rem 1.5rem !important;
+    position: ralative;
+    transform: translateX(-50%);
+    margin-left:50%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+.inner-wrapper img{
+    text-align: center!important;
+    align-items: center!important;
+    justify-content: center!important;
+    /* margin-right:50%; */
+}
+
+.partner{
+    text-align: center!important;
+    justify-content: center;
+    background-color: rgb(1, 12, 22) !important;
+    min-width:130px;
+    height: 140px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    margin-left:50%;
+    
+}
+
+.partner img{
+    text-align: center !important;
+    width: 60%;  
+}
+
+/* Buy */
+
+.buy-title{
+    width: 100%;
+}
+
+
+#buy-heading{
+    color:lime!important;
+    padding:0.8rem 2.5rem !important;
+    font-size: 2rem !important;
+    
+}
+
+
+.buy-header img{
+    width:50%;
+    border-radius: 50%;
+}
+
+
+.buy-header button a {
+    text-decoration: none;
+    /* color:white; */
+    font-weight: bolder;
+    padding:0.6rem;
+    color:green;
+    z-index:890;
+
+}
+
+
+
+/* GreenexTokenomics */
+
+.GreenexTokenomics{
+    width: 100%;
+    min-height: 50rem;
+    /* background-image: url(/img/bg30.jpg); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(../img/bg/bg2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* z-index:10; */
+    /* position:relative; */
+    padding: 2rem 1rem;
+}
+
+.tokenomics-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    /* padding: 0.8rem 1rem; */
+    line-height:40px ;
+    font-size: 1.2rem;
+    background-color: rgb(37, 37, 37);
+    z-index:5!important;
+    /* position:relative; */
+    padding: 2.5rem;
+    margin: 0;
+}
+
+.tokenomics-wrapper div{
+    outline-style: none;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tokenomics-body div{
+    outline-style: none ;
+}
+
+
+.GreenexTokenomics img{
+    width: 80%;
+    min-width: 230px;
+}
+
+.GreenexTokenomics div h1 {
+    border:3px;
+    outline-style: solid;
+    padding:1rem;
+    margin-top:1rem;
+    margin-bottom: 2rem;
+    outline-color:white;
+    outline-width: 1px;
+    color: white;
+    /* line-height: 30px */
+    
+}
+
+.GreenexTokenomics div p{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    color:white;
+    text-align:left;
+    line-height: 50px;
+}
+/*********************************** Tree Counter ************************/
+.tree-section{
+    display: flex;
+    justify-content: center;
+}
+
+.tree-innerWrapper{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 2rem 0;
+    padding:3rem;
+    /* background-color: rgb(37, 37, 37); */
+    background-color: transparent;
+}
+
+.tree-innerWrapper h1{
+    text-transform: uppercase;
+    border-style: solid;
+    border-width: 1px;
+    padding:0.8rem 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: lime;
+    border-color: white;
+}
+
+.tree-innerWrapper p{
+    max-width: 650px;
+    min-width:300px;
+    font-size: 1.6rem;
+    padding: 2rem;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.tree-innerWrapper img{
+    width:100%;
+    max-width: 1300px;
+    min-width:400px;
+    border-radius: 30px;
+    
+}
+
+
+
+
+/**********************************Token *******************************/
+.token{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    /* background-image: url(../img/bg/bg1.jfif); */
+    background-color: rgb(37, 37, 37);
+    margin-top: 4rem;
+    position: relative;
+    z-index: 40;
+    
+}
+
+
+.token h5{
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    padding: 0.6rem 5rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:lime;
+}
+
+.token p{
+    font-size: 1.1rem;
+ 
+}
+
+
+
+.token a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+
+.token a:hover{
+    color:greenyellow;
+}
+
+
+/****************************************Footer **********************************************/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 4rem;
+}
+
+.footer-left h5{
+    font-weight: 350;
+    
+}
+
+.footer-right{
+    max-width: 45%;
+    text-align: right;
+}
+
+.footer-left{
+    max-width: 45%;
+    text-align: left;
+}
+
+
+.footer-right .fab{
+    font-size: 35px;
+    padding-left:1px;
+}
+
+.footer-right .fab:hover{
+    color: lime!important;
+}
+
+
+
+
+
+/************************************* Media Query*************************************/
+
+@media screen and (min-width:768px){
+    #token-address{
+        font-size: 1.1rem;
+    }
+
+    .greenpaper-container div h1{
+        font-size: 2rem;
+    }
+   
+    .timeline ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position:relative;
+    }
+
+    .timeline ul li:nth-child(odd){
+        
+        float:left;
+        clear:right;
+        transform:translateX(-30px);
+        border-radius:10px 0 10px 10px ;
+    }
+
+    .timeline ul li:nth-child(even){
+        float:right;
+        clear:left;
+        transform:translateX(30px);
+        border-radius:0 10px 10px 10px ;
+        
+    }
+
+    .timeline::before{
+        content: "";
+        position:absolute;
+        height: 100%;
+        width: 2px;
+        background-color:rgb(85, 97, 85);
+        left:50%;
+        transform:translateX(-50%);
+        
+    }
+
+    .timeline ul li::after{
+        content: "";
+        position:absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        
+        background-color:rgb(20, 173, 20);
+        top:0;
+        /* transform: translateX(50%,-50%); */
+    }
+
+    .timeline ul li:nth-child(odd)::after{
+        right:-40px;
+        transform: translateX(-50%,-50%);
+        
+    }
+
+    .timeline ul li:nth-child(even)::after{
+        left:-40px;
+        transform: translateX(-50%,50%);
+    }
+
+    .timeline ul li:hover:after{
+        background-color: rgb(244, 245, 242);
+    }
+
+    .timeline-content .date{
+        position:absolute;
+        top:-30px;
+        color:white;
+
+    }
+
+}
+
+@media screen and (min-width:1031px) and (max-width:1400px){
+
+    #greenpaper-content{
+        font-size: 1.2rem;
+    }
+
+    .timeline ul li{
+        height: 12rem;
+    }
+
+    .wrapper p{
+        font-size: 0.9rem;
+        padding:1rem!important;
+    }
+
+    .tokenomics-wrapper div{
+        flex-direction: column;
+    }
+
+    .GreenexTokenomics div p{
+        font-size: 1.15rem;
+        
+    }
+
+    .tokenomics-wrapper{
+        width:95%;
+    }
+
+    /* Marketpalce */
+    .marketplace div{
+        width:90%!important;
+        padding: 1rem;
+    }
+
+    .marketplace div h3{
+        font-size: 1.2rem;
+    }
+
+    .marketplace button{
+        font-size: 0.6rem;
+    }
+
+    footer{
+        padding: 0.5rem 1rem;
+        /* flex-direction: column; */
+    }
+
+    footer div h5, footer div p{
+        font-size: 1rem;
+    }
+
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1030px){
+    .hero-header h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-text p{
+        font-size: 1.1rem;
+        line-height: 35px;
+    }
+
+    #greenpaper-content{
+        font-size: 1.2rem;
+    }
+
+    #token-address{
+        font-size: 1.1rem;
+    }
+
+    .tokenomics-wrapper div{
+        flex-direction: column;
+    }
+
+    .tokenomics-wrapper{
+        width:95%;
+    }
+
+    .GreenexTokenomics div p{
+        font-size: 1.15rem;
+        text-align: justify;
+        text-justify: distribute;
+        word-spacing: -2px;
+        padding-left:20px;
+        padding-right:20px;
+
+    }
+
+    .buy-header button a {
+        padding:0.2rem;
+        font-size: 1.3rem;
+    }
+
+    .inner-wrapper h1{
+        font-size: 1.6rem !important;
+    }
+    
+
+
+    /* Roadmap */
+    .timeline{
+        margin:1rem auto!important;
+    }
+
+    .roadmap-title{
+        margin:1rem auto!important;
+    }
+
+    .timeline ul li{
+        height: 12rem;
+    }
+
+    .marketplace div{
+        width:90%!important;
+        padding: 1rem;
+    }
+
+    .marketplace div p{
+        font-size: 1.5rem;
+    }
+
+    .marketplace button{
+        font-size: 0.6rem!important;
+    }
+
+    .tree-innerWrapper h1{
+        font-size: 1.5rem;
+    }
+
+    .tree-innerWrapper p{
+        font-size: 1.1rem;
+    }
+
+
+    footer{
+        padding: 0.5rem 1rem;
+        flex-direction: column;
+    }
+
+    
+    .footer-right , .footer-left{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    footer div h5, footer div p{
+        font-size: 0.8rem;
+    }
+
+    .footer-right .fab{
+        font-size: 20px;
+        padding-left:1px;
+    }
+
+    .back-home , .back-bottom {
+        left:88%;
+    }
+
+}
+
+@media screen and (max-width: 780px){
+    .hero-header, .hero-text{
+        padding: 0.5rem; 
+    }
+
+    .hero-header h1{
+        font-size: 2rem;
+    }
+
+    .hero-text p{
+        font-size: 1.1rem;
+        line-height: 30px;
+        padding-right:2rem;
+        text-align: justify;
+        word-spacing: -2px;
+        padding-right:40px!important;
+    }
+
+    #token-address{
+        font-size: 1rem;
+    }
+
+    /* Timeline */
+    .timeline{
+        margin:1rem auto!important;
+    }
+
+    .roadmap-title{
+        margin:1rem auto!important;
+    }
+
+    .timeline ul li{
+        height: 12rem;
+    }
+
+    .timeline ul li h3{
+        font-size: 18px;
+    }
+    .timeline-content .date{
+        font-size: 0.7rem;
+    }
+
+    .timeline ul li span{
+        font-size: 1rem;
+    }
+    
+
+    /* Team */
+    .team-title h1 , .wrapper h1{
+        font-size: 1.5rem!important;
+    }
+
+
+    /* Marketplace */
+    .marketplace div{
+        width:90%!important;
+        padding: 1rem;
+    }
+    
+    .marketplace button{
+        font-size: 0.6rem!important;
+    }
+
+    .marketplace div h3{
+        font-size: 1.2rem;
+    }
+
+
+    /* Greenpaper */
+    .greenpaper-container div{
+        max-width: 100%;
+        margin:2rem 0;
+    }
+
+
+    .greenpaper-container div h1{
+        font-size: 2rem!important;
+        
+    }
+
+    #greenpaper-content{
+        font-size: 1.1rem;
+        text-align: justify;
+        word-spacing:-2px;
+        padding-right:40px!important;
+        padding-left:40px!important;
+    }
+
+
+    /* Buy */
+    .buy-header div h1{
+        font-size: 1.3rem!important;
+    }
+
+
+    /* Tokenomics */
+    .wrapper p{
+        font-size: 0.9rem;
+        padding:1rem!important;
+    }
+
+    /* Tokenomics */
+    .tokenomics-wrapper div{
+        flex-direction: column;
+    }
+
+    .GreenexTokenomics div p{
+        font-size: 1.2rem;
+        text-align: justify;
+        word-spacing: -2px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .tokenomics-wrapper{
+        width:95%;
+    }
+
+    /* Partner */
+    .inner-wrapper h1{
+        font-size: 1.6rem !important;
+    }
+    
+    .partner {
+        min-width:80%;
+        height: 180px;
+    }
+
+    .tree-innerWrapper h1{
+        font-size: 1.5rem;
+    }
+    
+    .tree-innerWrapper p{
+        font-size: 1rem;
+    }
+
+
+    /* Footer */
+    footer{
+        padding: 0.5rem 1rem;
+        flex-direction: column;
+        justify-content: space-around!important;
+        
+    }
+
+    .footer-right , .footer-left{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    footer div h5, footer div p{
+        font-size: 1.2rem;
+        line-height: 40px;
+    }
+
+
+    .footer-right .fab{
+        font-size: 30px!important;
+        padding-right:0.5px;
+        line-height: 60px;
+    }
+
+    .back-home , .back-bottom {
+        left:88%;
+    }
+
+}
